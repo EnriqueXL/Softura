@@ -1,0 +1,7 @@
+{
+  "name": "softura",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
