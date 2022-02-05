@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="/inicio"></ion-back-button>
+            </ion-buttons>
+        </ion-buttons>
+        <ion-title>Nuevo contacto</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Registro</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+
+            <ion-item>
+                <ion-label position="floating">Nombre:</ion-label>
+                <ion-input type="text" placeholder="Nombre completo" [(ngModel)]="datos.nombre"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Correo:</ion-label>
+                <ion-input type="email" placeholder="Correo" [(ngModel)]="datos.correo"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Telefono:</ion-label>
+                <ion-input type="int" placeholder="Número de telefono" [(ngModel)]="datos.telefono"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Fecha de nacimiento:</ion-label>
+                <ion-input type="date" [(ngModel)]="datos.fecha"></ion-input>
+            </ion-item>
+            <br>
+            <ion-button class="btn btn-primary" expand="full" round (click)="save()" routerLink="/inicio">
+                Registrarse
+            </ion-button>
+
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>

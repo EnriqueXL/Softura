@@ -1,0 +1,47 @@
+<ion-header translucent>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/inicio"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Contactos</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<!-- Modificar aqui -->
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>
+                Contactos
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <td scope="col">Nombre</td>
+                        <td scope="col">Correo</td>
+                        <td scope="col">Telefono</td>
+                        <td scope="col">Fecha</td>
+                        <td scope="col">Fecha</td>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr wrap *ngFor="let item of listado; let index = index">
+                        <td>{{item.nombre}}</td>
+                        <td>{{item.correo}} </td>
+                        <td>{{item.telefono}}</td>
+                        <td>{{item.fecha}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+        </ion-card-content>
+    </ion-card>
+</ion-content>
