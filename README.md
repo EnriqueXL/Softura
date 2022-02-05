@@ -1,5 +1,7 @@
 # Softura
+### El sistema de autenticación está hecho con localstorage.
 
-Open cmd on your project folder and run
-# run npm install
-# run ionic serve
+## Instalaciones necesarias
+
+## run npm install
+## run ionic serve
