@@ -5,6 +5,9 @@
                 <ion-list id="inbox-list">
                     <ion-list-header>Menu</ion-list-header>
 
+                    <div style="display: flex; justify-content: center; margin:1rem; padding: 1rem;">
+                        <img width="60%" src="../assets/img/soft-grande.png">
+                    </div>
 
                     <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
                         <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">

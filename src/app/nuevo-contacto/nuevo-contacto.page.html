@@ -34,10 +34,10 @@
                 <ion-input type="date" [(ngModel)]="datos.fecha"></ion-input>
             </ion-item>
             <br>
-            <ion-button class="btn btn-primary" expand="full" round (click)="save()" routerLink="/inicio">
-                Registrarse
-            </ion-button>
 
+            <ion-button (click)="nuevoContacto()" expand="block" shape="round">
+                Registrar
+            </ion-button>
         </ion-card-content>
     </ion-card>
 
